@@ -1,8 +1,113 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-  </head>
-  <body>
-    <h1> Assallamu Alaikum </h1>
-  </body>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ibnul Hayat — Portfolio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50 text-gray-900 antialiased">
+  <!-- Header -->
+  <header class="bg-white shadow">
+    <div class="max-w-6xl mx-auto px-6 py-6 flex items-center justify-between">
+      <div class="flex items-center gap-4">
+        <div class="w-12 h-12 rounded-full bg-gradient-to-br from-indigo-500 to-pink-500 flex items-center justify-center text-white font-bold">IH</div>
+        <div>
+          <h1 class="text-xl font-semibold">Ibnul Hayat</h1>
+          <p class="text-sm text-gray-500">React Native Developer — 5 years • Doodle Inc.</p>
+        </div>
+      </div>
+      <nav class="hidden md:flex gap-6 text-sm">
+        <a href="#about" class="hover:text-indigo-600">About</a>
+        <a href="#projects" class="hover:text-indigo-600">Projects</a>
+        <a href="#skills" class="hover:text-indigo-600">Skills</a>
+        <a href="#contact" class="hover:text-indigo-600">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="max-w-6xl mx-auto px-6 py-12">
+    <!-- Hero -->
+    <section class="grid md:grid-cols-2 gap-8 items-center">
+      <div>
+        <h2 class="text-4xl font-extrabold leading-tight">Hi — I’m Ibnul, a React Native Developer.</h2>
+        <p class="mt-4 text-lg text-gray-700">
+          I build polished cross-platform mobile apps using React Native (Expo & CLI) and TypeScript. I
+          enjoy improving performance, architecting clean code, and learning backend development to ship
+          full-stack solutions.
+        </p>
+        <div class="mt-6 flex items-center gap-3">
+          <a href="#projects" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-indigo-600 text-white text-sm font-medium shadow">View Projects</a>
+          <a href="#contact" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg border border-gray-200 text-sm">Contact Me</a>
+        </div>
+      </div>
+      <div class="flex items-center justify-center">
+        <div class="w-72 h-72 rounded-2xl bg-gradient-to-br from-indigo-100 to-pink-50 flex items-center justify-center shadow-lg">
+          <div class="text-center p-6">
+            <div class="w-24 h-24 rounded-full bg-white shadow flex items-center justify-center font-bold">IH</div>
+            <p class="mt-4 text-sm text-gray-600">Profile photo placeholder</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="mt-12 bg-white p-6 rounded-2xl shadow-sm">
+      <h3 class="text-2xl font-semibold">About me</h3>
+      <p class="mt-3 text-gray-700">
+        I'm a React Native developer with ~5 years of experience building mobile applications shipped to
+        real users. I specialize in TypeScript, Expo, performance tuning, and creating reliable UX with
+        clean architecture. Currently at Doodle Inc., focusing on cross-platform features and app
+        optimization.
+      </p>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects" class="mt-10">
+      <h3 class="text-2xl font-semibold">Selected projects</h3>
+      <div class="mt-5 grid md:grid-cols-3 gap-6">
+        <article class="bg-white p-4 rounded-xl shadow-sm hover:shadow-md transition">
+          <h4 class="font-semibold">Guest Manager (Expo + TypeScript)</h4>
+          <p class="mt-2 text-sm text-gray-600">A cross-platform guest manager app with CRUD, filtering, categories, search and toast notifications.</p>
+        </article>
+        <article class="bg-white p-4 rounded-xl shadow-sm hover:shadow-md transition">
+          <h4 class="font-semibold">Trip Planner (React Native CLI)</h4>
+          <p class="mt-2 text-sm text-gray-600">Trip planner app implementing a Figma design, route planning, trip create/edit flows and persistent storage.</p>
+        </article>
+        <article class="bg-white p-4 rounded-xl shadow-sm hover:shadow-md transition">
+          <h4 class="font-semibold">Open Source Contributions</h4>
+          <p class="mt-2 text-sm text-gray-600">Performance fixes and middleware improvements for community libraries.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills" class="mt-12 bg-white p-6 rounded-2xl shadow-sm">
+      <h3 class="text-2xl font-semibold">Skills & Tools</h3>
+      <ul class="mt-4 list-disc list-inside text-gray-700">
+        <li>React Native (Expo & CLI)</li>
+        <li>TypeScript, React</li>
+        <li>Redux Toolkit, Context API</li>
+        <li>Node.js fundamentals (learning backend)</li>
+        <li>Performance optimization</li>
+      </ul>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="mt-12">
+      <div class="bg-indigo-700 text-white p-6 rounded-lg shadow-md">
+        <h3 class="text-xl font-semibold">Let’s build something together</h3>
+        <p class="mt-2 text-sm">Freelance, contract or full-time — I’m open to talking about new projects.</p>
+        <div class="mt-4 flex flex-col sm:flex-row gap-3">
+          <a href="mailto:your.email@example.com" class="inline-block px-4 py-2 bg-white text-indigo-700 rounded-md font-medium">Email me</a>
+          <a href="#" class="inline-block px-4 py-2 border border-white rounded-md text-white text-sm">Download Resume</a>
+        </div>
+      </div>
+    </section>
+
+    <footer class="mt-12 text-center text-sm text-gray-500">
+      © 2025 Ibnul Hayat — Built with HTML & Tailwind
+    </footer>
+  </main>
+</body>
 </html>
